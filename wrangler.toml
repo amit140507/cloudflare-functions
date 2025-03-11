@@ -1,0 +1,15 @@
+name = "cloudflare-functions"
+main = "index.html"
+
+[build]
+command = "npm run build"  # Adjust based on your build process
+
+[[functions]]
+name = "submit"
+path = "functions/submit.js"
+
+[env.production]
+compatibility_date = "2025-03-11"
+bindings = [
+    { name = "D1_DATABASE", type = "d1", database_name = "testing1" }
+]
