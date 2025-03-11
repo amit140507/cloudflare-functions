@@ -1,13 +1,9 @@
 name = "cloudflare-functions"
-type = "javascript"
 
 # Specify the output directory where the built files are located
 pages_build_output_dir = "dist"  # or use 'public', or any directory you use for static files
 
-# Define your Pages functions
-[[functions]]
-name = "submit"
-path = "functions/submit.js"
+
 
 # Environment and D1 database bindings
 [env.production]
