@@ -3,7 +3,7 @@ name = "cloudflare-functions"
 # Specify the output directory where the built files are located
 pages_build_output_dir = "dist"  # or use 'public', or any directory you use for static files
 
-
+build = { command = "npm run build", directory = "dist" }
 
 # Environment and D1 database bindings
 [env.production]
