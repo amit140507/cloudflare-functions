@@ -1,5 +1,5 @@
 import { createPagesFunction } from '@cloudflare/pages-functions';
-import { D1_DATABASE } from './d1-binding'; // D1 binding reference
+
 
 export const onRequestPost = async (context) => {
   const formData = await context.request.formData();
