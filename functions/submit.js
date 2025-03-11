@@ -1,6 +1,3 @@
-import { createPagesFunction } from '@cloudflare/pages-functions';
-
-
 export const onRequestPost = async (context) => {
   const formData = await context.request.formData();
   const name = formData.get('name');
